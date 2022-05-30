@@ -10,8 +10,8 @@ import lombok.RequiredArgsConstructor;
 
 import org.springframework.stereotype.Service;
 
-@RequiredArgsConstructor
-@Service
+@RequiredArgsConstructor // final이나 @NonNull을 매개변수로 받는 생성자 생성
+@Service // 비즈니스 로직수행을 명시
 public class UserService {
 
     private final UserRepository userRepository;
